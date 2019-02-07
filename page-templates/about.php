@@ -16,6 +16,7 @@ get_header();
 <section class="section-about">
     <div class="container">
         <div class="row">
+            <?php while ( have_posts() ) : the_post(); ?>
             <div class="col-lg-6 wow fadeInUp animated">
                 <div class="text-center">
                     <img class="photo" src="<?php the_field('apropos_photo');?>" />
@@ -29,6 +30,7 @@ get_header();
                 </div>
             </div>
         </div>
+        <?php endwhile;   ?>
     </div>
 
 </section>
