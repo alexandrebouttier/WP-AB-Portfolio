@@ -36,12 +36,9 @@ get_header();?>
                     </a>
                 </div>
             </div>
-       
 
             <?php endwhile; endif;wp_reset_postdata();  ?>
         </div>
-
-
 
 
     </div>
