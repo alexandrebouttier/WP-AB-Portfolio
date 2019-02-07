@@ -1,14 +1,12 @@
 # [WP]-AB-Portfolio
-Thème Wordpress Portfolio sur-mesure réalisé avec le Framework Understrap et Bootstrap
+Thème Wordpress Portfolio sur-mesure 
 
 #### Librairies utilisées
-- Bootstrap4
+- Bootstrap 4
 - Jquery
 - Animate CSS
 - WOWJS
 
-### Thème parent Understrap
-Télécharger gratuitement le thème parent ici : https://understrap.com
 ### Plugins nécessaires pour le fonctionnement du thème
 
 - Advanced Custom Fields https://fr.wordpress.org/plugins/advanced-custom-fields
