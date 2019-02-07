@@ -1,0 +1,346 @@
+/*
+ Theme Name:   ABPORTFOLIO
+ Theme URI:    https://www.alexandrebouttier.fr
+ Description:  Theme portfolio
+ Author:       Alexandre Boutier
+ Author URI:   https://www.alexandrebouttier.fr
+ Version:      0.5.3
+ License: GNU General Public License v2 or later
+ License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  understrap-child
+ Tags: one-column, custom-menu, featured-images, theme-options, translation-ready
+ GitHub Theme URI: holger1411/understrap-child
+*/
+/*========================== GENERAL ========================== */
+
+html {
+    --primary: #FE5C62 !important;
+    --color-secondary: #283042 !important;
+    --primary-hover: #ea7b80;
+}
+
+body {
+    background-color: white;
+    font-family: 'Poppins-Regular';
+}
+
+.v-center {
+    display: flex;
+    align-items: center;
+}
+
+/*========================== BOUTONS ========================== */
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+}
+
+/*========================== POLICES ========================== */
+
+h2 {
+    font-size: 1.9rem;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-family: 'Poppins-Medium';
+}
+
+a {
+    text-decoration: none !important;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(./fonts/Poppins-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url(./fonts/Poppins-Medium.ttf)
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url(./fonts/Poppins-Bold.ttf)
+}
+
+@font-face {
+    font-family: 'Poppins-ExtraBold';
+    src: url(./fonts/Poppins-ExtraBold.ttf)
+}
+
+@font-face {
+    font-family: 'Poppins-Italic';
+    src: url(./fonts/Poppins-Italic.ttf)
+}
+
+@font-face {
+    font-family: 'Poppins-Thin';
+    src: url(./fonts/Poppins-Thin.ttf)
+}
+
+@font-face {
+    font-family: 'Poppins-Light';
+    src: url(./fonts/Poppins-Light.ttf)
+}
+
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url(./fonts/Poppins-SemiBold.ttf)
+}
+
+@font-face {
+    font-family: 'Pacifico';
+    src: url(./fonts/Pacifico-Regular.ttf)
+}
+
+/*========================== VARIANT POLICES ========================= */
+
+.f_bold {
+    font-family: 'Poppins-Bold';
+}
+
+.f_extrabold {
+    font-family: 'Poppins-ExtraBold';
+}
+
+.f_medium {
+    font-family: 'Poppins-Medium';
+}
+
+.f_light {
+    font-family: 'Poppins-Light';
+}
+
+.f_semibold {
+    font-family: 'Poppins-SemiBold';
+}
+
+.f_italic {
+    font-family: 'Poppins-Italic';
+}
+
+.f_thin {
+    font-family: 'Poppins-Thin';
+}
+
+
+/*========================== COULEURS========================= */
+
+.red {
+    color: var(--primary);
+}
+
+.bg-light {
+    background-color: #ffffff !important;
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+/*========================== NAVBAR========================== */
+
+a.navbar-brand {
+    font-size: 1.8em;
+    font-family: 'Poppins-ExtraBold';
+    color: var(--primary) !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    font-family: 'Poppins-Medium';
+}
+
+/*========================== PAGE HEADER ========================== */
+
+.page-header {
+    background-color: #f7f7f7;
+    margin-top: 4.4em;
+    margin-bottom: 3em;
+    color: black;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.page-header h1 {
+    font-family: 'Poppins-Thin';
+    font-size: 2.5em;
+}
+
+.page-header p {
+    font-family: 'Poppins-Light';
+    font-size: 1.25em;
+}
+
+/*========================== HERO ========================== */
+
+.jumbotron {
+    background-position: 0% 45%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    border-radius: 0em;
+    padding-top: 10em;
+    padding-bottom: 8em;
+}
+
+.jumbotron h1 {
+    font-size: 2.6em;
+    font-family: 'Poppins-Medium';
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.jumbotron p.lead {
+    font-size: 1.4em;
+    text-shadow: 2px 2px 5px #000;
+}
+
+/*========================== INTRO ========================== */
+
+.section_intro p {
+    margin-bottom: 4em;
+    font-size: 1.25em;
+}
+
+.section_intro strong {
+    font-family: "Poppins-Bold";
+    color: var(--primary);
+}
+
+/*========================== SERVICES ========================== */
+
+@media screen and (max-width: 768px) {
+    .bloc_service_texte {
+        text-align: center;
+    }
+}
+
+/*========================== RECOMMANDATIONS ========================== */
+
+.section-recommandations .slider {
+    position: relative;
+    width: 100%;
+    height: 20em !important;
+    overflow: hidden;
+}
+
+.section-recommandations .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    padding-left: 5em !important;
+    padding-right: 5em !important;
+}
+
+.section-recommandations i {
+    color: var(--primary);
+}
+
+/*========================== ADS PRESTATIONS ========================== */
+.section_ads_presta {
+    background-color: #f7f7f7;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.section_ads_presta img {
+    height: 15em;
+}
+
+/*========================== APROPOS ========================== */
+
+.section-about .presentation {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    padding: 1em;
+    box-shadow: 0 20px 30px 0px #cfcfcf;
+}
+
+.section-about .bloc-btn-cv {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.section-about img.photo {
+    max-width: 13em;
+}
+
+/*========================== PORTFOLIO ========================== */
+
+.card-project .card-title {
+    font-family: 'Poppins-Bold';
+    font-size: 1.4em;
+    color: black;
+}
+
+.badge-secondary {
+    font-size: 0.8em;
+}
+
+
+.card-projet-img {
+    height: 15em;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 0% !important;
+
+}
+.badge-primary {
+    color: #fff;
+    background-color: var(--color-secondary);
+}
+
+.card-project .card {
+    box-shadow: 0 20px 30px 0px #cfcfcf;
+    margin-bottom: 3em;
+
+}
+
+.card-project .card:hover {
+    box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.05);
+    transition-delay: 0.2s;
+
+}
+
+article.projet .bloc-image {
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 0% !important;
+    height:30em;
+  }
+
+/*========================== FOOTER ========================== */
+
+footer {
+    color: black;
+}
+
+footer i {
+    font-size: 3em;
+    color: var(--color-secondary);
+}
