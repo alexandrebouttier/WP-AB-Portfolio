@@ -25,7 +25,7 @@ get_template_part( 'page-templates/blocs/header_title' );
             <h2>Description du projet:</h2>
             <?php the_content(); ?>
             <h2>Technologies utilisés:</h2>
-            <?php the_field('projet_technos'); ?> <br>
+            <?php get_technos() ?> <br>
             <?php if (get_field('projet_lien')) {
                 ?>
             <a rel="noopener noreferrer" target="_blank" href="<?php the_field('projet_lien'); ?>">

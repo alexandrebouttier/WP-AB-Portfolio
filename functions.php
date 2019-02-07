@@ -1,4 +1,3 @@
-
 <?php
 // Chargement des scripts
 function lgmac_scripts()
@@ -22,3 +21,20 @@ function lgmac_setup()
     add_theme_support('post-thumbnails');
 }
 add_action('after_setup_theme', 'lgmac_setup' ,'lgmac_admin_script');
+
+
+
+function get_technos(){
+ if(get_field('projet_technos')){
+
+    $techno = preg_split("/[\s,]+/", get_field('projet_technos'));
+    $nb_technos =  count($techno);
+    for ($i = 0; $i < $nb_technos; $i++)
+    { 
+        ?>
+<span class="mr-2 badge badge-primary" style="padding: 1em;"><?php echo $techno[$i];?> </span>
+<?php
+    }
+ }
+    
+}
