@@ -21,10 +21,14 @@ get_template_part( 'page-templates/blocs/header_title' );
         </div>
 
         <div class="col-lg-6 wow fadeInUp animated">
-            <span class="badge badge-warning" style="padding: 1em; font-size: 0.8em;">Projet En cours</span>
+            <?php get_statut(); ?>
             <h2>Description du projet:</h2>
             <?php the_content(); ?>
-            <h2>Technologies utilisés:</h2>
+            <?php if (get_field('projet_technos')){
+                ?>
+            <h2>Technologies utilisés:</h2><?php
+            }?>
+
             <?php get_technos() ?> <br>
             <?php if (get_field('projet_lien')) {
                 ?>

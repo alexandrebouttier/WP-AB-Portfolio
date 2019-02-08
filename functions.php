@@ -38,3 +38,26 @@ function get_technos(){
  }
     
 }
+
+function get_statut(){
+    if(get_field('projet_statut')){
+        $statut = get_field('projet_statut');
+        switch ($statut) {
+            case "Terminer":
+                $class="success";
+                break;
+            case "En cours":
+                $class ="warning";
+                break;
+            case "En attente":
+                $class="danger";
+                break;
+        }
+        ?>
+        <span class="badge badge-<?php echo $class;?>" style="padding: 1em; font-size: 0.8em;">Projet <?php echo $statut; ?></span> <?php
+    }
+}
+
+
+
+
