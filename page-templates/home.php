@@ -134,7 +134,7 @@ get_header();
     </div>
 </section>
 <div class="text-center"><a href="/a-propos"><button class="text-center btn btn-info btn-lg"
-            style="margin-bottom: 2em;">En savoir plus sur moi</button></a><br><a href="/portfolio"><button
+            style="margin-bottom: 2em;">En savoir plus sur moi</button></a><br><a href="/realisations"><button
             class="text-center btn btn-primary btn-lg">Voir mon Portfolio</button></a></div>
 
 <!-- // Fin Home Services-->
