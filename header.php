@@ -25,7 +25,7 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="#">AB</a>
+                <a class="navbar-brand" href="/">AB</a>
                 <?php
 		wp_nav_menu( array(
 			'theme_location'    => 'primary',
