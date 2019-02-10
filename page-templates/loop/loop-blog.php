@@ -8,7 +8,10 @@
  * 
  */
 ?>
-<div class="col-lg-9">
+
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
 
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
@@ -35,8 +38,5 @@
 </div>
 <!-- // col-lg-9-->
 
-<!-- col-lg-3-->
-<div class="col-lg-3">
-<?php get_sidebar(); ?>
-</div>
-<!-- // col-lg-3-->
+
+</div></div>
