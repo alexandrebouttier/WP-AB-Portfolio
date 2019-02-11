@@ -41,4 +41,3 @@ if ( 'projet' == get_post_type() ) {
         <?php endif;?>
     </div>
 </section>
-

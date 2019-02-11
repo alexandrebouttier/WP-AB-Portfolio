@@ -78,8 +78,12 @@ get_header();
 
         <h2 class="text-center"><?php the_field('recommandations_titre');?><i class="fas fa-quote-left ml-3 red"></i>
         </h2>
-        <?php $idRotator = get_field(id_testimonials);
+        <div class="row">
+
+            <?php $idRotator = get_field(id_testimonials);
                 echo do_shortcode(' [testimonial_rotator id = ' . $idRotator . '] ');?>
+        </div>
+
     </div>
 
 </section>

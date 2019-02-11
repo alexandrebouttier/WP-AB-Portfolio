@@ -259,6 +259,23 @@ a.navbar-brand {
     color: var(--primary);
 }
 
+h2.testimonial_rotator_slide_title {
+    font-size: 1.3em;
+}
+
+@media screen and (max-width: 414px) {
+    .testimonial_rotator_wrap.with-prevnext {
+        padding: 10px 10px !important;
+    }
+    .section-recommandations .slide {
+        padding-left: 1em !important;
+        padding-right: 1em !important;
+    }
+    .testimonial_rotator_wrap {
+        margin: 20px 5px;
+        padding: 10px;
+    }
+}
 /*========================== ADS PRESTATIONS ========================== */
 .section_ads_presta {
     background-color: #f7f7f7;
@@ -310,6 +327,7 @@ a.navbar-brand {
     background-position: 50% 0% !important;
 
 }
+
 .badge-primary {
     color: #fff;
     background-color: var(--color-secondary);
@@ -331,8 +349,8 @@ article.projet .bloc-image {
     background-size: contain !important;
     background-repeat: no-repeat !important;
     background-position: 50% 0% !important;
-    height:30em;
-  }
+    height: 30em;
+}
 
 /*========================== FOOTER ========================== */
 
