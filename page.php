@@ -16,8 +16,7 @@ get_header();
 get_template_part( 'page-templates/blocs/header_title'); 
 ?>
 
-<h1>PAGE PHP </h1>
-<div class="container">
+<div class="container wow fadeInUp animated">
     <div class="row">
         <div class="col-lg-12">
             <?php if (have_posts()) : ?>
