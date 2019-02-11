@@ -30,11 +30,4 @@ get_template_part( 'page-templates/blocs/header_title');
     </div>
 </div>
 
-<?php
- /* Run the loop to output the posts.
- * If you want to overload this in a child theme then include a file
- * called loop-index.php and that will be used instead.
- */
-    get_template_part( 'loop', 'category' );
-?>
 <?php get_footer(); ?>
