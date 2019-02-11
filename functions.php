@@ -3,10 +3,10 @@
 function lgmac_scripts()
 {
     wp_enqueue_style('lgmac_bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '1.0.0', 'all');
-    wp_enqueue_style('lgmac_animateCSS', get_template_directory_uri() . '/css/animate.css', array(), '1.0.0', 'all');
+    wp_enqueue_style('lgmac_animateCSS', get_template_directory_uri() . '/css/animate.min.css', array(), '1.0.0', 'all');
     wp_enqueue_style('lgmac_custom', get_template_directory_uri() . '/style.css', array('lgmac_bootstrap'), '1.0.0', 'all');
    // wp_enqueue_script('lgmac_particle', get_template_directory_uri() . '/js/particles.min.js', array(), '1.0.0', true);
-    wp_enqueue_script('lgmac_jquery', get_template_directory_uri() . '/js/jquery-3.3.1.min.js', array(), '1.0.0', true);
+    wp_enqueue_script('lgmac_jquery', get_template_directory_uri() . '/js/jquery-3.3.1.slim.min.js', array(), '1.0.0', true);
     wp_enqueue_script('lgmac_bootstrap_js', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '1.0.0', true);
     wp_enqueue_script('lgmac_wow_js', get_template_directory_uri() . '/js/wow.min.js', array(), '1.0.0', true);
     wp_enqueue_script('lgmac_app_js', get_template_directory_uri() . '/js/app.js', array(), '1.0.0', true);
