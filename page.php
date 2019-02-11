@@ -19,13 +19,15 @@ get_template_part( 'page-templates/blocs/header_title');
 <h1>PAGE PHP </h1>
 <div class="container">
     <div class="row">
-    <?php if (have_posts()) : ?>
-    <?php while (have_posts()) : the_post(); ?>
+        <div class="col-lg-12">
+            <?php if (have_posts()) : ?>
+            <?php while (have_posts()) : the_post(); ?>
 
-    <?php the_content(); ?>
+            <?php the_content(); ?>
 
-    <?php endwhile; ?>
-    <?php endif; ?>
+            <?php endwhile; ?>
+            <?php endif; ?>
+        </div>
     </div>
 </div>
 
