@@ -50,9 +50,11 @@ body {
     background-color: var(--primary-hover);
     border-color: var(--primary-hover);
 }
+
 .close_btn {
     font-size: 3em;
 }
+
 /*========================== POLICES ========================== */
 
 h2 {
@@ -193,6 +195,22 @@ a.navbar-brand {
 .page-header p {
     font-family: 'Poppins-Light';
     font-size: 1.25em;
+}
+
+@media screen and (max-width: 320px) {
+
+    .page-header {
+        padding: 1.5em !important;
+    }
+
+    .page-header h1 {
+        font-size: 1.8em;
+    }
+
+    .page-header p {
+
+        font-size: 1.1em;
+    }
 }
 
 /*========================== HERO ========================== */
@@ -356,6 +374,7 @@ article.projet .bloc-image {
     background-position: 50% 0% !important;
     height: 30em;
 }
+
 /*========================== PAGINATION========================== */
 .page-link {
     color: black;
@@ -373,6 +392,7 @@ a.prev.page-link {
     background-color: var(--color-secondary);
     border-color: var(--color-secondary);
 }
+
 /*========================== FOOTER ========================== */
 
 footer {
@@ -383,4 +403,3 @@ footer i {
     font-size: 3em;
     color: var(--color-secondary);
 }
-

@@ -21,7 +21,7 @@ get_header();?>
 // the query to set the posts per page to 3
 $date_projet = get_field('projet_date');
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-$args = array('posts_per_page' => 6, 'paged' => $paged ,   'post_type' => 'projet','meta_key'=> 'projet_date', 'orderby'	=> 'meta_value');
+$args = array('posts_per_page' => 9, 'paged' => $paged ,   'post_type' => 'projet','meta_key'=> 'projet_date', 'orderby'	=> 'meta_value');
 query_posts($args); ?>
             <!-- the loop -->
             <?php if ( have_posts() ) : while (have_posts()) : the_post(); ?>
