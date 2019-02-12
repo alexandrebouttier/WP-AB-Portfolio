@@ -21,7 +21,16 @@ get_template_part( 'page-templates/blocs/header_title' );
         </div>
 
         <div class="col-lg-6 wow fadeInUp animated">
-            <?php get_statut(); ?>
+
+            <div class="row">
+                <div class="col-md-6">
+                <?php get_statut(); ?>
+                </div>
+                
+                <div class="col-md-6 text-right">
+                <a href="/realisations"> <i class="fas fa-times red close_btn"></i></a>
+                </div>
+                </div>
             <h2>Description du projet:</h2>
             <?php the_content(); ?>
             <?php if (get_field('projet_technos')){
@@ -39,5 +48,6 @@ get_template_part( 'page-templates/blocs/header_title' );
         <?php endwhile; ?>
 
         <?php endif; ?>
+
     </div>
 </div>

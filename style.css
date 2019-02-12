@@ -50,7 +50,9 @@ body {
     background-color: var(--primary-hover);
     border-color: var(--primary-hover);
 }
-
+.close_btn {
+    font-size: 3em;
+}
 /*========================== POLICES ========================== */
 
 h2 {

@@ -46,7 +46,7 @@ query_posts($args); ?>
 
         </div>
 
-        <div class="row justify-content-md-center">
+        <div class="row justify-content-md-center mx-auto">
             <?php pagination() ?>
 
         </div>

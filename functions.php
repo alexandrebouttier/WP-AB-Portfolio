@@ -32,7 +32,7 @@ function get_technos(){
     for ($i = 0; $i < $nb_technos; $i++)
     { 
         ?>
-<span class="mr-2 badge badge-primary" style="padding: 1em;"><?php echo $techno[$i];?> </span>
+<span class="mr-2 mb-2 badge badge-primary" style="padding: 1em;"><?php echo $techno[$i];?> </span>
 <?php
     }
  }
@@ -54,7 +54,7 @@ function get_statut(){
                 break;
         }
         ?>
-<span class="badge badge-<?php echo $class;?>" style="padding: 1em; font-size: 0.8em;">Projet
+<span class="mt-3 badge badge-<?php echo $class;?>" style="padding: 1em; font-size: 0.8em;">Projet
     <?php echo $statut; ?></span>
 <?php
     }
