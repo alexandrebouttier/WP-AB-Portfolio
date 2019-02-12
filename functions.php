@@ -54,10 +54,51 @@ function get_statut(){
                 break;
         }
         ?>
-        <span class="badge badge-<?php echo $class;?>" style="padding: 1em; font-size: 0.8em;">Projet <?php echo $statut; ?></span> <?php
+<span class="badge badge-<?php echo $class;?>" style="padding: 1em; font-size: 0.8em;">Projet
+    <?php echo $statut; ?></span>
+<?php
     }
 }
 
 
 
+ 
+function pagination( $args = array(), $class = 'pagination' ) {
+    if ( $GLOBALS['wp_query']->max_num_pages <= 1 ) {
+        return;
+    }
+    $args = wp_parse_args(
+        $args,
+        array(
+            'mid_size'           => 2,
+            'prev_next'          => true,
+            'prev_text'          => __( '&laquo; Précédent', 'understrap' ),
+            'next_text'          => __( 'Suivant &raquo;', 'understrap' ),
+            'screen_reader_text' => __( 'Posts navigation', 'understrap' ),
+            'type'               => 'array',
+            'current'            => max( 1, get_query_var( 'paged' ) ),
+        )
+    );
+    $links = paginate_links( $args );
+    ?>
 
+<nav aria-label="<?php echo $args['screen_reader_text']; ?>">
+
+    <ul class="pagination">
+
+        <?php
+            foreach ( $links as $key => $link ) {
+                ?>
+        <li class="page-item <?php echo strpos( $link, 'current' ) ? 'active' : ''; ?>">
+            <?php echo str_replace( 'page-numbers', 'page-link', $link ); ?>
+        </li>
+        <?php
+            }
+            ?>
+
+    </ul>
+
+</nav>
+
+<?php
+}
