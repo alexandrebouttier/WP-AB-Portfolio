@@ -17,14 +17,14 @@ get_header();?>
 <section class="section_portfolio">
     <div class="container wow fadeInUp animated">
         <div class="row">
-            <?php
-            $date_projet = get_field('projet_date');
-            $query = new WP_Query( array(
-                 'post_type' => 'projet',
-                  'meta_key'=> 'projet_date',
-                 'orderby'	=> 'meta_value', ) );
-                if ( $query->have_posts() ) : ?>
-            <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+            <?php 
+// the query to set the posts per page to 3
+$date_projet = get_field('projet_date');
+$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+$args = array('posts_per_page' => 6, 'paged' => $paged ,   'post_type' => 'projet','meta_key'=> 'projet_date', 'orderby'	=> 'meta_value');
+query_posts($args); ?>
+            <!-- the loop -->
+            <?php if ( have_posts() ) : while (have_posts()) : the_post(); ?>
             <?php $imageThumb = get_field('projet_image_thumb');?>
             <div class="col-md-4">
                 <div class="card-project">
@@ -37,11 +37,35 @@ get_header();?>
                 </div>
             </div>
 
-            <?php endwhile; endif;wp_reset_postdata();  ?>
+            <?php endwhile; ?>
+
+
+            <?php else : ?>
+            <!-- No posts found -->
+            <?php endif; ?>
+
         </div>
 
+        <div class="row">
 
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+            </nav>
+            <!-- pagination --><?php 
+the_posts_pagination( array(
+'mid_size'  => 2,
+'prev_text' => __( 'Précédent', 'textdomain' ),
+'next_text' => __( 'Suivant', 'textdomain' ),
+) );?>
+        </div>
     </div>
+
     </div>
 
 </section>

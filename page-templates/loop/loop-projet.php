@@ -37,6 +37,7 @@ get_template_part( 'page-templates/blocs/header_title' );
             }?>
         </div>
         <?php endwhile; ?>
+
         <?php endif; ?>
     </div>
 </div>
