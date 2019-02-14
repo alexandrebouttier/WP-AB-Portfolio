@@ -102,3 +102,4 @@ function pagination( $args = array(), $class = 'pagination' ) {
 
 <?php
 }
+
