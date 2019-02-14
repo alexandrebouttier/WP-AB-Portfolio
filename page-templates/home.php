@@ -99,7 +99,7 @@ get_header();
             <div class="col-lg-6">
                 <h3 class="f-bold"><?php the_field('ads_prestations_titre');?> </h3>
                 <p><?php the_field('ads_prestations_texte');?></p>
-                <a class="btn btn-primary btn-lg shadow" href="/services" role="button">Voir mes prestations</a>
+                <a class="btn btn-primary btn-lg shadow" href="/services" role="button">Voir mes services</a>
             </div>
 
 
