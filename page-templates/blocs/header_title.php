@@ -31,7 +31,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <h1>
             <?php 
 if ( 'projet' == get_post_type() ) {
-           echo '<i class="fas fa-tag red mr-3"></i>';
+           echo '<i class="fas fa-tag white mr-3"></i>';
        }  ?><?php echo get_the_title(); ?>
         </h1>
         <?php if (get_field('page_header_texte')): ?>

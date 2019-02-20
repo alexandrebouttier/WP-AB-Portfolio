@@ -76,7 +76,10 @@ p {
     font-family: 'Poppins-Regular';
     src: url(./fonts/Poppins-Regular.ttf)
 }
-
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(./fonts/Roboto-Regular.ttf)
+}
 @font-face {
     font-family: 'Poppins-Medium';
     src: url(./fonts/Poppins-Medium.ttf)
@@ -157,7 +160,9 @@ p {
 .bg-light {
     background-color: #ffffff !important;
 }
-
+.bg-light-grey{
+    background-color: #F4F7FA;
+}
 .bg-primary {
     background-color: var(--primary) !important;
 }
@@ -181,10 +186,10 @@ a.navbar-brand {
 /*========================== PAGE HEADER ========================== */
 
 .page-header {
-    background-color: #F4F7FA;
+    background: url('./img/header.jpg');
     margin-top: 4.4em;
     margin-bottom: 3em;
-    color: black;
+    color: white;
     text-align: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
@@ -192,11 +197,13 @@ a.navbar-brand {
 .page-header h1 {
     font-family: 'Poppins-Thin';
     font-size: 2.5em;
+    text-shadow: 2px 2px 5px #000;
 }
 
 .page-header p {
     font-family: 'Poppins-Light';
     font-size: 1.25em;
+    text-shadow: 2px 2px 5px #000;
 }
 
 @media screen and (max-width: 320px) {
@@ -256,6 +263,11 @@ a.navbar-brand {
     color: white;
     padding-top: 4em;
     padding-bottom: 4em;
+    
+}
+.section_home_services p{
+  
+    font-family: 'Roboto-Regular';
 }
 @media screen and (max-width: 768px) {
     .bloc_service_texte {
@@ -353,7 +365,12 @@ h2.testimonial_rotator_slide_title {
     font-size: 0.8em;
 }
 
-
+.projet_container{
+    background-color: #F4F7FA;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+}
 .card-projet-img {
     height: 15em;
     background-size: cover !important;

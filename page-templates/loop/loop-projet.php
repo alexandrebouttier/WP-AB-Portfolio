@@ -12,15 +12,16 @@ get_template_part( 'page-templates/blocs/header_title' );
 ?>
 <div class="container">
 
-    <div class="row">
+    <div class="row projet_container shadow wow fadeInUp animated">
+     
         <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
-        <div class="col-lg-6 wow fadeInUp animated">
+        <div class="col-lg-6">
             <img class="img-fluid" src="<?php the_field('projet_image_thumb');?>" />
 
         </div>
 
-        <div class="col-lg-6 wow fadeInUp animated">
+        <div class="col-lg-6">
 
             <div class="row">
                 <div class="col-md-6">
