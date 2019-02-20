@@ -47,11 +47,11 @@ get_header();
 
 
 <!-- Début Home Services-->
-<section class="section_home_services">
+<section class="section_home_services wow fadeInUp animated">
     <!-- container -->
     <div class="container">
 
-        <div class="row justify-content-md-center wow fadeInUp animated">
+        <div class="row justify-content-md-center">
             <?php
                 $query = new WP_Query( array( 'post_type' => 'service' ) );
 
