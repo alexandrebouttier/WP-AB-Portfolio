@@ -39,7 +39,7 @@ get_header();
         <h2 class="text-center">
             <?php the_field('intro_titre');?>
         </h2>
-        <p class="text-center"><?php the_field('intro_texte');?></p>
+        <p class="text-center"><i class="fas fa-quote-right red mr-2"></i><?php the_field('intro_texte');?></p>
     </div>
     <!-- // container -->
 </section>
