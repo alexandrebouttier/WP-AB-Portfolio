@@ -20,12 +20,13 @@
             <!-- container -->
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
+
+                <a class="navbar-brand" href="/">AB</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="/">AB</a>
                 <?php
 		wp_nav_menu( array(
 			'theme_location'    => 'primary',
