@@ -14,9 +14,9 @@
 /*========================== GENERAL ========================== */
 
 html {
-    --primary: #FE5C62 !important;
+    --primary: #8A37A1 !important;
     --color-secondary: #283042 !important;
-    --primary-hover: #ea7b80;
+    --primary-hover: #6a4e9e;
 }
 
 body {
@@ -60,7 +60,7 @@ body {
 h2 {
     font-size: 1.9rem;
     margin-bottom: 1em;
-    margin-top: 1em;
+    padding-top: 1em;
     font-family: 'Poppins-Medium';
 }
 
@@ -163,7 +163,9 @@ p {
 }
 
 /*========================== NAVBAR========================== */
-
+.navbar{
+    z-index: 2;
+}
 a.navbar-brand {
     font-size: 1.8em;
     font-family: 'Poppins-ExtraBold';
@@ -179,7 +181,7 @@ a.navbar-brand {
 /*========================== PAGE HEADER ========================== */
 
 .page-header {
-    background-color: #f7f7f7;
+    background-color: #F4F7FA;
     margin-top: 4.4em;
     margin-bottom: 3em;
     color: black;
@@ -216,28 +218,27 @@ a.navbar-brand {
 /*========================== HERO ========================== */
 
 .jumbotron {
-    background-position: 0% 45%;
-    background-size: cover;
-    background-repeat: no-repeat;
+   background-color: #F4F7FA;
     color: white;
     border-radius: 0em;
     padding-top: 10em;
     padding-bottom: 8em;
+ 
+    background: url(   https://kryll.io/img/bg-app.svg) center bottom;
+    background-size: cover;
 }
 
 .jumbotron h1 {
     font-size: 2.6em;
     font-family: 'Poppins-Medium';
     text-transform: uppercase;
-    text-shadow: 2px 2px 5px #000;
+ 
 }
 
 .jumbotron p.lead {
     font-size: 1.4em;
-    text-shadow: 2px 2px 5px #000;
+    
 }
-
-/*========================== INTRO ========================== */
 
 .section_intro p {
     margin-bottom: 4em;
@@ -250,7 +251,12 @@ a.navbar-brand {
 }
 
 /*========================== SERVICES ========================== */
-
+.section_home_services{
+    background: linear-gradient(0deg, #1e455c, #491d55);
+    color: white;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
 @media screen and (max-width: 768px) {
     .bloc_service_texte {
         text-align: center;
@@ -258,11 +264,15 @@ a.navbar-brand {
 }
 
 /*========================== RECOMMANDATIONS ========================== */
+.section-recommandations {
+    background-color: #F4F7FA;
+}
 
 .section-recommandations .slider {
     position: relative;
     width: 100%;
     height: 20em !important;
+
     overflow: hidden;
 }
 
@@ -301,7 +311,8 @@ h2.testimonial_rotator_slide_title {
 
 /*========================== ADS PRESTATIONS ========================== */
 .section_ads_presta {
-    background-color: #f7f7f7;
+    background: linear-gradient(180deg, #1e455c, #491d55);
+    color: white;
     padding-top: 2.5em;
     padding-bottom: 2.5em;
     border-bottom: 1px solid rgba(0, 0, 0, 0.125);
