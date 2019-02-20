@@ -29,7 +29,7 @@ get_template_part( 'page-templates/blocs/header_title' );
                 </div>
                 
                 <div class="col-md-6 text-right">
-                <a href="/realisations"> <i class="fas fa-times red close_btn"></i></a>
+                <a href="javascript:history.back()"> <i class="fas fa-times red close_btn"></i></a>
                 </div>
                 </div>
             <h2>Description du projet:</h2>
