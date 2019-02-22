@@ -59,7 +59,7 @@ get_header();
             <?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
             <div class="col-md-4 col-lg-2 text-center">
-                <img src="<?php the_field('service_image');?>" />
+                <img class="img-fluid" src="<?php the_field('service_image');?>" />
             </div>
             <div class="col-md-6 col-lg-4 bloc_service_texte  ">
                 <h5 class="f_medium"><?php the_title(); ?></h5>

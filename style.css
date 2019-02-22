@@ -20,8 +20,8 @@ html {
 }
 
 body {
-    background-color: white;
-    font-family: 'Poppins-Regular';
+    background-color: #F9F9F9;
+    font-family: 'OpenSans-Regular';
 }
 
 .v-center {
@@ -78,8 +78,13 @@ p {
 }
 
 @font-face {
-    font-family: 'Roboto-Regular';
-    src: url(./fonts/Roboto-Regular.ttf)
+    font-family: 'OpenSans-Regular';
+    src: url(./fonts/OpenSans-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'OpenSans-SemiBold';
+    src: url(./fonts/OpenSans-SemiBold.ttf)
 }
 
 @font-face {
@@ -276,9 +281,13 @@ a.navbar-brand {
 
 }
 
+.section_home_services img {
+    max-height: 130px;
+}
+
 .section_home_services p {
 
-    font-family: 'Roboto-Regular';
+    font-family: 'OpenSans-Regular';
 }
 
 @media screen and (max-width: 768px) {
@@ -352,7 +361,7 @@ h2.testimonial_rotator_slide_title {
 .section-about .presentation {
     border: 1px solid rgba(0, 0, 0, 0.125);
     padding: 1em;
-    box-shadow: 0 20px 30px 0px #cfcfcf;
+    box-shadow: rgba(191, 190, 190, 0.35) 1px 20px 30px;
 }
 
 .section-about .bloc-btn-cv {
@@ -404,7 +413,7 @@ h2.testimonial_rotator_slide_title {
 }
 
 .card-project .card:hover {
-    box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: rgba(191, 190, 190, 0.35) 1px 20px 30px;
     transition-delay: 0.2s;
 
 }
@@ -432,6 +441,24 @@ a.prev.page-link {
     color: white;
     background-color: var(--color-secondary);
     border-color: var(--color-secondary);
+}
+
+.col-services_elementor {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    box-shadow: rgba(191, 190, 190, 0.35) 1px 20px 30px;
+    margin-bottom: 2em;
+}
+
+.col-services_elementor p {
+    color: black;
+    font-family: 'OpenSans-Regular' !important;
+}
+
+.col-services_elementor h3 {
+    font-family: 'Poppins-Medium';
+    color: black;
+    font-size: 1.6em;
 }
 
 /*========================== FOOTER ========================== */
