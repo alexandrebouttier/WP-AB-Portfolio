@@ -387,10 +387,11 @@ h2.testimonial_rotator_slide_title {
 }
 
 .projet_container {
-    background-color: #F4F7FA;
+    background-color: white;
     border: 1px solid rgba(0, 0, 0, 0.125);
     padding-top: 1em;
     padding-bottom: 1.5em;
+  box-shadow: rgba(191, 190, 190, 0.35) 1px 20px 30px;
 }
 
 .card-projet-img {

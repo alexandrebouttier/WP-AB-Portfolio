@@ -12,7 +12,7 @@ get_template_part( 'page-templates/blocs/header_title' );
 ?>
 <div class="container">
 
-    <div class="row projet_container shadow wow fadeInUp animated">
+    <div class="row projet_container wow fadeInUp animated">
      
         <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
