@@ -291,6 +291,12 @@ a.navbar-brand {
     max-height: 130px;
 }
 
+@media screen and (max-width: 414px) {
+    h5 {
+        font-size: 1.30em;
+    }
+}
+
 @media screen and (max-width: 760px) {
     .section_home_services img {
         margin-bottom: 2em;
