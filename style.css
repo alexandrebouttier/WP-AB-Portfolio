@@ -284,7 +284,15 @@ a.navbar-brand {
 .section_home_services img {
     max-height: 130px;
 }
+@media screen and (max-width: 760px) {
+    .section_home_services img {
+       margin-bottom: 2em;
+    }
+    .section_home_services p {
 
+       margin-bottom: 1.5em;
+    }
+}
 .section_home_services p {
 
     font-family: 'OpenSans-Regular';
