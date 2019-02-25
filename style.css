@@ -245,6 +245,12 @@ a.navbar-brand {
     background-size: cover;
 }
 
+@media screen and (max-width: 414px) {
+    .jumbotron {
+        text-align: center;
+    }
+}
+
 .jumbotron h1 {
     font-size: 2.6em;
     font-family: 'Poppins-Medium';
@@ -284,15 +290,18 @@ a.navbar-brand {
 .section_home_services img {
     max-height: 130px;
 }
+
 @media screen and (max-width: 760px) {
     .section_home_services img {
-       margin-bottom: 2em;
+        margin-bottom: 2em;
     }
+
     .section_home_services p {
 
-       margin-bottom: 1.5em;
+        margin-bottom: 1.5em;
     }
 }
+
 .section_home_services p {
 
     font-family: 'OpenSans-Regular';
@@ -399,7 +408,7 @@ h2.testimonial_rotator_slide_title {
     border: 1px solid rgba(0, 0, 0, 0.125);
     padding-top: 1em;
     padding-bottom: 1.5em;
-  box-shadow: rgba(191, 190, 190, 0.35) 1px 20px 30px;
+    box-shadow: rgba(191, 190, 190, 0.35) 1px 20px 30px;
 }
 
 .card-projet-img {
