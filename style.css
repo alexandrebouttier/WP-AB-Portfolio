@@ -379,6 +379,19 @@ h2.testimonial_rotator_slide_title {
     height: 15em;
 }
 
+@media screen and (max-width: 991px) {
+    .section_ads_presta {
+        text-align: center;
+    }
+
+    .section_ads_presta img {
+        height: 10em;
+        margin-bottom: 1em;
+
+    }
+
+}
+
 /*========================== APROPOS ========================== */
 
 .section-about .presentation {
